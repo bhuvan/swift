@@ -2,6 +2,7 @@
 *.sw?
 doc/build/*
 dist
+AUTHORS
 ChangeLog
 .coverage
 swift.egg-info

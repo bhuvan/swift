@@ -15,6 +15,7 @@
 # limitations under the License.
 
 from setuptools import setup, find_packages
+from swift.openstack.common.setup import get_cmdclass
 
 from swift import __canonical_version__ as version
 
@@ -32,6 +33,7 @@ setup(
     url='https://launchpad.net/swift',
     packages=find_packages(exclude=['test', 'bin']),
     test_suite='nose.collector',
+    cmdclass=get_cmdclass(),
     classifiers=[
         'Development Status :: 4 - Beta',
         'License :: OSI Approved :: Apache Software License',
